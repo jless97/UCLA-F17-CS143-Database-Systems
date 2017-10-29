@@ -1,0 +1,11 @@
+DROP TABLE Sales;
+DROP TABLE Review;
+DROP TABLE MaxMovieID;
+DROP TABLE MaxPersonID;
+DROP TABLE MovieRating;
+DROP TABLE MovieGenre;
+DROP TABLE MovieDirector;
+DROP TABLE MovieActor;
+DROP TABLE Director;
+DROP TABLE Actor;
+DROP TABLE Movie;
