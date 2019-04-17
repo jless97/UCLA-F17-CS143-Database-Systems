@@ -1,0 +1,25 @@
+// Classes
+
+public class Car {
+	final private int year;
+	private int miles;
+
+	public int getYear() {
+
+	}
+
+	public int getMiles() { }
+
+	....
+}
+
+//Scala
+class Car(val year:Int, var miles:Int) {
+	def this(year) = {	//auxillary constructor
+		this(year, 0)	//primary constructor -- forced !
+	}
+}
+
+val ford = new Car(2010, 0)
+println(ford.year)
+println(ford.miles)

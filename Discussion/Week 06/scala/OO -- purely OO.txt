@@ -1,0 +1,37 @@
+// OO -- purely OO
+System.out.println(1.toString())		Error! 
+System.out.println((new Integer(1)).toString)	//1
+
+println(1.toString())	//1
+
+
+
+class Car {
+	def turn(direction:String) = {
+		println("Turning " + direction)
+	}
+}
+
+val car = new Car()
+car.turn("left")
+
+car turn "left"
+
+//
+public class Main {
+	public static void main() {}
+}
+
+class Car {
+	
+}
+
+object Car { // a companion object
+	def main() = {
+
+	}
+
+	def countInstances = {
+
+	}
+}

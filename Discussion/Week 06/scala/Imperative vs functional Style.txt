@@ -1,0 +1,46 @@
+// Imperative vs functional Style
+
+// imperative way
+def total(list:List[Int]) = {
+	var sum = 0
+	for (i <- list) 	// type is inferred !
+		sum +=i
+	sum	// No return statement
+}
+
+total(List(1,2,3,4,5))
+
+//functional sense -- assignmentless programming
+def totalFunctional(list:List[Int]) = {
+	list.foldLeft(0) { (carryOver, e) => carryOver + e}
+}
+
+totalFunctional(List(1,2,3,4,5))
+
+def total(list:List[Int]) = {
+	var sum = 0
+	list.foreach {e => if (e%2==0) sum+e}
+	sum
+}
+
+def totalMod(list:List[Int], selector:Int => Boolean) = {
+	var sum = 0
+	list.foreach {e => if (selector(e)) sum+=e}
+	sum
+}
+
+totalMod(List(1,2,3,4,5), {e => e%2 == 0})
+
+//
+ArrayList<Integer> arr = new ArrayList<Integer>();
+arr.add(1);
+//arr.add(1.0);
+
+ArrayList arr2 = arr;
+arr2.add(1.0)
+
+var str = "hello"
+println(str)	//"hello"
+str = "hi"
+println(str)	//"hi"
+str = 1.0	// ERROR !	// Statically typed Lanugage !

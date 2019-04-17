@@ -1,0 +1,7 @@
+Why Scala?
+What's so special?
+Classes
+OO
+Imperative vs Functional Style
+Pattern Matching
+Traits

@@ -1,0 +1,53 @@
+// Traits
+
+class A {
+	foo()	
+}
+
+class B extends A{
+	foo() { ... }
+}
+
+class C extends A{
+	foo() { ... }
+}
+
+class D extends B, C {
+	foo()
+}
+
+// Scala
+trait Drawable {
+	def draw() {}
+	def draw2() { ... }
+}
+
+trait Cowboy extends Drawable {
+	override def draw() { println("In Cowboy!!")}
+}
+
+trait Artist extends Drawable {
+	override def draw() { println("In Artist")}
+}
+
+class CowboyArtist extends Cowboy with Artist
+
+object Main {
+	(new CowboyArtist()).draw()	// In Artist
+}
+
+
+// Traits as types
+trait X {def foo(s:String)}
+trait Y {def bar(i:Int)}}
+class A {
+	def baz() {println("Hello World!")}
+}
+
+class B {
+	def barfoobaz(axy: A extends X with Y) = {
+		axy.foo("Hi")
+		axy.bar(2)
+		axy.baz()
+	}
+}
