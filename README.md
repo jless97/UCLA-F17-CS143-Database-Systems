@@ -1,4 +1,4 @@
-# CS143 - Database Systems, Fall 2017
+# CS143 - Database Systems, Fall 2017 
 
 ## Course Description
 Information systems and database systems in enterprises. File organization and secondary storage structures. Relational model and relational database systems. Network, hierarchical, and other models. Query languages. Database design principles. Transactions, concurrency, and recovery. Integrity and authorization.
